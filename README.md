@@ -41,7 +41,6 @@ To run TensorBoard:
 Add a directory for model:
   - `/model/seq2seq` to store checkpoints
 
-
 Running the Data preparation script:
-    - Raw datafile should be placed under `./Data/` with the name `reddit_q_a.txt`
-    - Run `python3 data_preparation.py main`
+  - Raw datafile should be placed under `./Data/` with the name `reddit_q_a.txt`
+  - Run `python3 data_preparation.py main`
