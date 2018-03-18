@@ -121,7 +121,7 @@ def train_seq2seq(
     vocab = p_helper.load_vocab(vocab_filename)
     params = {
         'vocab_size': len(vocab),
-        'batch_size': 128,
+        'batch_size': 64,
         'input_max_length': 20,
         'output_max_length': 20,
         'embed_dim': 100,
