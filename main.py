@@ -2,7 +2,7 @@ import tensorflow as tf
 import logging
 import sys
 
-import Seq2Seq as s2s
+import seq_2_seq as s2s
 
 
 def main():

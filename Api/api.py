@@ -5,7 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from flask import Flask, request
 from flask_restful import Resource, Api, reqparse
-import Seq2Seq as s2s
+import seq_2_seq as s2s
 
 app = Flask(__name__)
 api = Api(app)

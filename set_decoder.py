@@ -72,9 +72,6 @@ def setting_decoder(helper, scope, num_units, encoder_outputs, encoder_final_sta
             return outputs[0]
 
         else:
-            # decoder = tf.contrib.seq2seq.BasicDecoder(cell=out_cell, helper=helper,
-            #                                           initial_state=out_cell.zero_state(dtype=tf.float32,
-            #                                                                             batch_size=batch_size))
             decoder = tf.contrib.seq2seq.BasicDecoder(cell=out_cell, helper=helper,
                                                       initial_state=out_cell.zero_state(dtype=tf.float32,
                                                                                         batch_size=batch_size).clone(cell_state=encoder_final_state))
